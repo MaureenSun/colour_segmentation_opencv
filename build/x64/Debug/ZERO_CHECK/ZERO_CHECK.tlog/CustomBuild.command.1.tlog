@@ -1,0 +1,10 @@
+^C:\USERS\MAUREEN\DOWNLOADS\COLOUR_SEGMENTATION_OPENCV\BUILD\CMAKEFILES\A1E7E2F97662D822FD30B44C139E6DCE\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Maureen/Downloads/colour_segmentation_opencv -BC:/Users/Maureen/Downloads/colour_segmentation_opencv/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Maureen/Downloads/colour_segmentation_opencv/build/cvtests.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
